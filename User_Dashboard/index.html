@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+   footer {
+      background-color: gray;
+      /* color: #fff; */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+   }
+
+   .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+   }
+   .footer-container{
+      color: brown;
+   }
+
+   .footer-left,
+   .footer-center,
+   .footer-right {
+      flex: 1;
+      margin: 10px;
+   }
+
+   .footer-logo {
+      width: 120px;
+      margin-bottom: 10px;
+      border-radius: 40px;
+   }
+
+   .footer-center h3,
+   .footer-right h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+   }
+
+   .footer-center p,
+   .footer-right a {
+      margin: 5px 0;
+   }
+
+   .footer-right a {
+      margin: 0 5px;
+      display: inline-block;
+   }
+
+   .footer-right a img {
+      width: 24px;
+      height: 24px;
+   }
+
+   @media (max-width: 768px) {
+      .footer-container {
+         flex-direction: column;
+      }
+
+      .footer-left,
+      .footer-center,
+      .footer-right {
+         text-align: center;
+         margin: 10px 0;
+      }
+   }
+</style>
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Pluto - Responsive Bootstrap Admin Panel Templates</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- site icon -->
+   <link rel="icon" href="../Images/logo.png" type="image/png" />
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- site css -->
+   <link rel="stylesheet" href="style.css" />
+   <!-- responsive css -->
+   <link rel="stylesheet" href="css/responsive.css" />
+   <!-- color css -->
+   <link rel="stylesheet" href="css/colors.css" />
+   <!-- select bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap-select.css" />
+   <!-- scrollbar css -->
+   <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/custom.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body class="dashboard dashboard_1">
+   <div class="full_container">
+      <div class="inner_container">
+         <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div class="sidebar_blog_1">
+               <div class="sidebar-header">
+                  <div class="logo_section">
+                     <a href="index.html"><img class="logo_icon img-responsive" src="../Images/logo.png" alt="#" /></a>
+                  </div>
+               </div>
+               <div class="sidebar_user_info">
+                  <div class="icon_setting"></div>
+                  <div class="user_profle_side">
+                     <div class="user_img"><img class="img-responsive" src="images/layout_img/profile.png" alt="#" />
+                     </div>
+                     <div class="user_info">
+                        <h6>Mujeeb ul Rahman</h6>
+                        <p><span class="online_animation"></span> Online</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sidebar_blog_2">
+               <h4>General</h4>
+               <ul class="list-unstyled components">
+                  <li class="active">
+                     <a href="#dashboard"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                     <!-- <ul class="collapse list-unstyled" id="dashboard">
+                           <li>
+                              <a href="dashboard.html">> <span>Default Dashboard</span></a>
+                           </li>
+                           <li>
+                              <a href="dashboard_2.html">> <span>Dashboard style 2</span></a>
+                           </li>
+                        </ul> -->
+                  </li>
+                  <li><a href="get_addmission.html"><i class="fa fa-clock-o orange_color"></i> <span>Get
+                           Admission</span></a></li>
+                  <!-- <li>
+                        <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
+                        <ul class="collapse list-unstyled" id="element">
+                           <li><a href="general_elements.html">> <span>General Elements</span></a></li>
+                           <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
+                           <li><a href="icons.html">> <span>Icons</span></a></li>
+                           <li><a href="invoice.html">> <span>Invoice</span></a></li>
+                        </ul>
+                     </li>
+                     <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
+                     <li>
+                        <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-object-group blue2_color"></i> <span>Apps</span></a>
+                        <ul class="collapse list-unstyled" id="apps">
+                           <li><a href="email.html">> <span>Email</span></a></li>
+                           <li><a href="calendar.html">> <span>Calendar</span></a></li>
+                           <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
+                        </ul>
+                     </li>
+                     <li><a href="price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Pricing Tables</span></a></li>
+                     <li>
+                        <a href="contact.html">
+                        <i class="fa fa-paper-plane red_color"></i> <span>Contact</span></a>
+                     </li> -->
+                  <!-- <li class="active">
+                        <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Additional Pages</span></a>
+                        <ul class="collapse list-unstyled" id="additional_page">
+                           <li>
+                              <a href="profile.html">> <span>Profile</span></a>
+                           </li>
+                           <li>
+                              <a href="project.html">> <span>Projects</span></a>
+                           </li>
+                           <li>
+                              <a href="login.html">> <span>Login</span></a>
+                           </li>
+                           <li>
+                              <a href="404_error.html">> <span>404 Error</span></a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li><a href="map.html"><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>
+                     <li><a href="charts.html"><i class="fa fa-bar-chart-o green_color"></i> <span>Charts</span></a></li>
+                     <li><a href="settings.html"><i class="fa fa-cog yellow_color"></i> <span>Settings</span></a></li> -->
+               </ul>
+            </div>
+         </nav>
+         <!-- end sidebar -->
+         <!-- right content -->
+         <div id="content">
+            <!-- topbar -->
+            <div class="topbar">
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="full">
+                     <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i
+                           class="fa fa-bars"></i></button>
+
+                     <div class="right_topbar">
+                        <div class="icon_info">
+
+                           <ul class="user_profile_dd">
+                              <li>
+                                 <a class="dropdown-toggle" data-toggle="dropdown"><img
+                                       class="img-responsive rounded-circle" src="images/layout_img/profile.png"
+                                       alt="#" /><span class="name_user">Mujeeb ul Rahman</span></a>
+                                 <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                                    <!-- <a class="dropdown-item" href="settings.html">Settings</a>
+                                       <a class="dropdown-item" href="help.html">Help</a> -->
+                                    <a class="dropdown-item" href="logout.php"><span>Log Out</span> <i
+                                          class="fa fa-sign-out"></i></a>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <!-- end topbar -->
+            <!-- dashboard inner -->
+            <div class="midde_cont">
+               <div class="container-fluid">
+                  <div class="row column_title">
+                     <div class="col-md-12">
+                        <div class="page_title">
+                           <h2>Dashboard</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- Slider -->
+
+               <div class="container-fluid">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                           class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                           aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                           aria-label="Slide 3"></button>
+                     </div>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img src="../Images/sddefault.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="../Images/slider2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                           <img src="../Images/slider3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                     </button>
+                  </div>
+               </div>
+
+
+
+               <!-- Slider -->
+
+               <div class="container-fluid">
+                  <div class="footer">
+                     <h1 class="p-2">DIRECTORATE OF ADMISSIONS</h1>
+                  </div>
+               </div>
+
+               <div class="container">
+                  <div class="row">
+                     <div class="col-12">
+                        <h2>
+                           Introduction
+                        </h2>
+                        <p class="text-justify ms-5">
+
+                           Introduction
+                           The Directorate of Admissions is the gateway for aspirants of their educational goings-on in
+                           the maximum suitable and effective manner. The Shaheed Benazir Bhutto University provides
+                           quality education at the doorstep of Shaheed Benazir Abad division and its surroundings. The
+                           digitalization of the admission process has not only resulted in the transparency and
+                           effectiveness of the whole process but also has provided an important learning opportunity to
+                           the major stakeholders thus playing its pivotal role in achieving prime objectives.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="container-fluid">
+                  <div class="footer">
+                     <h1 class="p-2">DEGREE PROGRAM</h1>
+                  </div>
+               </div>
+
+               <div class="container">
+                  <div class="row">
+                     <div class="col-12">
+                        <h2>
+                           Undergraduate degree programs
+                        </h2>
+                        <table class="table table-striped ms-5">
+                           <tr>
+                              <td>1) BBA</td>
+                              <td>2) BS Information Technology</td>
+                              <td>3) BS Education</td>
+                              <td>4) BS Media Studies</td>
+                           </tr>
+
+                           <tr>
+                              <td>5) BS Economics</td>
+                              <td>6) BS Chemistry</td>
+                              <td>7) BS English</td>
+                              <td>8) BS Statistics</td>
+                           </tr>
+
+
+                           <tr>
+                              <td>9) BS Molecular Biology & Genetics</td>
+                              <td>10) BS Sindhi</td>
+                              <td>11) BS Art and Design</td>
+                              <td>12) BS Microbiology</td>
+                           </tr>
+
+
+                           <tr>
+                              <td>13) BS Computer Science</td>
+                              <td>14) LLB (in process)</td>
+                              <td></td>
+                              <td></td>
+                           </tr>
+                        </table>
+
+
+                        <h2>
+                           Graduate degree programs
+                        </h2>
+                        <table class="table table-striped ms-5">
+                           <tr>
+                              <td>1) MS/M.Phil Chemistry</td>
+                              <td>2) M.Phil Education</td>
+                              <td>3) MBA</td>
+                              <td>4) MS in Business Administration</td>
+                           </tr>
+
+                           <tr>
+                              <td>5) MS/M.Phil Genetics</td>
+                              <td>6) MS Sindhi (in process)</td>
+                              <td></td>
+                              <td></td>
+
+                           </tr>
+
+
+
+                        </table>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="container-fluid">
+                  <div class="footer">
+                     <h1 class="p-2">FEES STRUCTURE</h1>
+                  </div>
+               </div>
+
+               <div class="container">
+                  <div class="row">
+                     <div class="col-12">
+                        <h2>
+                           Admission Fees for the Admission Session 2024
+                        </h2>
+                        <table class="table table-striped ms-5">
+                           <tr>
+                              <th>BS & BS Bridge Program</th>
+                              <th>Admission Fee</th>
+                              <th>Library Fee (Annual)</th>
+                              <th>Student ID Card Fee (Annual)</th>
+                              <th>Sports Fee (Annual)</th>
+                              <th>Enrollment Fees</th>
+                              <th>Transport Fee (Annual)</th>
+                              <th>Mark sheet verification Fee</th>
+                              <th>Semester Fees</th>
+                              <th>Study Tour Fee (Annual)</th>
+                              <th>Total Fees</th>
+                           </tr>
+
+                           <tr>
+                              <td>BBA</td>
+                              <td>Rs.8000</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.500</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.2500</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.46000</td>
+                           </tr>
+
+                           <tr>
+                              <td>English</td>
+                              <td>Rs.8000</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.500</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.2500</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.46000</td>
+                           </tr>
+
+
+                           <tr>
+                              <td>I.T</td>
+                              <td>Rs.8000</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.500</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.2500</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.46000</td>
+                           </tr>
+
+
+
+                           <tr>
+                              <td>Computer Science</td>
+                              <td>Rs.8000</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.500</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.2500</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.46000</td>
+                           </tr>
+
+
+
+                           <tr>
+                              <td>Chemistry</td>
+                              <td>Rs.8000</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.500</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.2500</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.46000</td>
+                           </tr>
+
+
+
+                           <tr>
+                              <td>Microbiology</td>
+                              <td>Rs.8000</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.500</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.2500</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.46000</td>
+                           </tr>
+
+
+
+                           <tr>
+                              <td>Art and Design</td>
+                              <td>Rs.8000</td>
+                              <td>Rs.2000</td>
+                              <td>Rs.500</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.2500</td>
+                              <td>Rs.15000</td>
+                              <td>Rs.1000</td>
+                              <td>Rs.46000</td>
+                           </tr>
+
+
+
+                        </table>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="container-fluid">
+                  <div class="footer">
+                     <p>&copy; 2024 SBBU University, Nawabshah. All Rights Reserved<br><br>
+                        Distributed By: <a href="https://SBBUSBA.com/">SBBUSBA</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+              
+               <!-- end dashboard inner -->
+            </div>
+         </div>
+      </div>
+      <!-- jQuery -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="js/animate.js"></script>
+      <!-- select country -->
+      <script src="js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="js/owl.carousel.js"></script>
+      <!-- chart js -->
+      <script src="js/Chart.min.js"></script>
+      <script src="js/Chart.bundle.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <script src="js/chart_custom_style1.js"></script>
+</body>
+
+</html>

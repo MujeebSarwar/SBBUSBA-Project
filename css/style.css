@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url("../Images/sbbu_background_logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
